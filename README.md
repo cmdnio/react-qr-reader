@@ -2,6 +2,10 @@
 
 :rocket: React QR Reader component. Check out the [demo](https://react-qr-reader.github.io/react-qr-reader/).
 
+## This is a forked version of React QR Reader project that solves the issue with React 18 peer dependency.
+
+We would remove the repo and a package as soon as the original package would support React 18
+
 ## Table of contents
 
 - [Use Case](#use-case)
@@ -37,13 +41,13 @@ You can install this library via NPM or YARN.
 ### NPM
 
 ```bash
-npm i react-qr-reader
+npm i @cmdnio/react-qr-reader
 ```
 
 ### YARN
 
 ```bash
-yarn add react-qr-reader
+yarn add @cmdnio/react-qr-reader
 ```
 
 ## Example Usage
@@ -52,7 +56,7 @@ After reading and performing the previous steps, you should be able to import th
 
 ```javascript
 import React, { useState } from 'react';
-import { QrReader } from 'react-qr-reader';
+import { QrReader } from '@cmdnio/react-qr-reader';
 
 const Test = (props) => {
   const [data, setData] = useState('No result');
